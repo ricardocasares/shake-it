@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 45px;
+      border-top: 40px dashed black;
+    }
+
+    img {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .peer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: red;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transition: transform .3s;
+      transform-origin: 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=https%3A%2F%2Fshakeit.analogic.al%2F&amp;qzone=0&amp;margin=0&amp;size=200x200&amp;ecc=L"
+    alt="qr code" />
+  <script src="./index.js"></script>
+</body>
+
+</html>
