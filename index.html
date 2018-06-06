@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <style>
     body {
       margin: 0;
@@ -25,12 +26,17 @@
       transition: transform .3s;
       transform-origin: 0 0;
     }
+
+    @media(max-width: 750px) {
+      img {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=https%3A%2F%2Fshakeit.analogic.al%2F&amp;qzone=0&amp;margin=0&amp;size=200x200&amp;ecc=L"
-    alt="qr code" />
+  <img src="https://file-mdzmqbzusc.now.sh" alt="qr code" />
   <script src="./index.js"></script>
 </body>
 
