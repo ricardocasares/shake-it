@@ -16,8 +16,8 @@ window.onload = setup;
 
 function setup() {
   if (admin()) {
-    hub.subscribe(JOINED).on("data", data => joined(data));
-    hub.subscribe(SHAKED).on("data", data => shaked(data));
+    hub.subscribe(JOINED).on("data", joined);
+    hub.subscribe(SHAKED).on("data", shaked);
   }
 
   if (!admin()) {
